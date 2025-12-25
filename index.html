@@ -1,151 +1,159 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <title>Giới thiệu bản thân - Nguyễn Mỹ Anh</title>
+  <meta charset="UTF-8">
+  <title>Giới thiệu bản thân - Nguyễn Mỹ Anh</title>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
-    <style>
-        * {
-            box-sizing: border-box;
-        }
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      background: linear-gradient(135deg, #ffe6f0, #e6f3ff);
+      color: #333;
+    }
 
-        body {
-            margin: 0;
-            font-family: 'Quicksand', sans-serif;
-            background: linear-gradient(135deg, #ffe6f0, #e6f3ff);
-            color: #333;
-        }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 40px 20px;
-        }
+    h1, h2 {
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
 
-        h1, h2 {
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-        }
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
 
-        h1 {
-            font-size: 36px;
-            margin-bottom: 5px;
-        }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      margin-top: 35px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
 
-        .subtitle {
-            text-align: center;
-            font-size: 16px;
-            color: #666;
-        }
+    h2 {
+      color: #ff6fa5;
+      margin-bottom: 15px;
+    }
 
-        .card {
-            background: white;
-            border-radius: 20px;
-            padding: 25px;
-            margin-top: 35px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-        }
+    p, li {
+      font-size: 17px;
+      line-height: 1.7;
+    }
 
-        h2 {
-            color: #ff6fa5;
-            margin-bottom: 15px;
-        }
+    ul {
+      padding-left: 20px;
+    }
 
-        p, li {
-            font-size: 17px;
-            line-height: 1.7;
-        }
+    img {
+      width: 100%;
+      max-height: 450px;
+      object-fit: cover;
+      border-radius: 18px;
+      margin-top: 15px;
+    }
 
-        ul {
-            padding-left: 20px;
-        }
+    video {
+      width: 100%;
+      border-radius: 18px;
+      margin-top: 15px;
+    }
 
-        img {
-            width: 100%;
-            max-height: 450px;
-            object-fit: cover;
-            border-radius: 18px;
-            margin-top: 15px;
-        }
+    .youtube iframe {
+      width: 100%;
+      height: 350px;
+      border-radius: 18px;
+      margin-top: 15px;
+      border: none;
+    }
 
-        video {
-            width: 100%;
-            border-radius: 18px;
-            margin-top: 15px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 60px;
-            font-size: 14px;
-            color: #777;
-        }
-    </style>
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      font-size: 14px;
+      color: #777;
+    }
+  </style>
 </head>
 
 <body>
-
 <div class="container">
 
-    <!-- TIÊU ĐỀ -->
-    <h1>Nguyễn Mỹ Anh</h1>
-    <p class="subtitle">Lớp 12A4 – Trường THPT Hòn Gai</p>
+  <h1>Nguyễn Mỹ Anh</h1>
 
-    <!-- THÔNG TIN CƠ BẢN -->
-    <div class="card">
-        <h2>🌸 Thông tin cơ bản</h2>
-        <p>
-            <strong>Họ tên:</strong> Nguyễn Mỹ Anh<br>
-            <strong>Ngày sinh:</strong> 31/05/2008<br>
-            <strong>Lớp:</strong> 12A4 – THPT Hòn Gai
-        </p>
+  <!-- 1. THÔNG TIN CƠ BẢN -->
+  <div class="card">
+    <h2>🌸 Thông tin cơ bản</h2>
+    <p>
+      <strong>Tên:</strong> Nguyễn Mỹ Anh<br>
+      <strong>Ngày sinh:</strong> 31/05/2008<br>
+      <strong>Lớp:</strong> 12A4 – Trường THPT Hòn Gai
+    </p>
+  </div>
+
+  <!-- 2. SỞ THÍCH -->
+  <div class="card">
+    <h2>🎧 Sở thích</h2>
+    <ul>
+      <li><strong>Nghe nhạc</strong></li>
+    </ul>
+
+    <p>Những bài hát hay nghe:</p>
+
+    <div class="youtube">
+      <iframe src="https://www.youtube.com/embed/zuBjkHOFVJs" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/BnrFZamxIwY" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/FN7ALfpGxiI" allowfullscreen></iframe>
     </div>
 
-    <!-- HÌNH ẢNH TRÂN TRỌNG -->
-    <div class="card">
-        <h2>📸 Hình ảnh tôi trân trọng</h2>
-        <p>
-            Đây là hình ảnh mang ý nghĩa đặc biệt đối với tôi, gắn liền với
-            những kỷ niệm và những giai đoạn đáng nhớ trong cuộc sống.
-        </p>
+    <ul>
+      <li>Nấu ăn</li>
+      <li>Chơi thể thao</li>
+    </ul>
+  </div>
 
-        <!-- CODE HÌNH ẢNH -->
-        <img src="images/my-photo.jpg" alt="Hình ảnh trân trọng">
-    </div>
+  <!-- ẢNH TRÂN TRỌNG -->
+  <div class="card">
+    <h2>📸 Hình ảnh tôi trân trọng</h2>
+    <img src="images/my-photo.jpg" alt="Hình ảnh trân trọng">
+  </div>
 
-    <!-- VIDEO TRÂN TRỌNG -->
-    <div class="card">
-        <h2>🎬 Video tôi trân trọng</h2>
-        <p>
-            Video này lưu giữ những khoảnh khắc quan trọng và cảm xúc
-            mà tôi luôn trân trọng và ghi nhớ.
-        </p>
+  <!-- VIDEO TRÂN TRỌNG -->
+  <div class="card">
+    <h2>🎬 Video tôi trân trọng</h2>
+    <video controls>
+      <source src="videos/my-video.mp4" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ video.
+    </video>
+  </div>
 
-        <!-- CODE VIDEO -->
-        <video controls>
-            <source src="videos/my-video.mp4" type="video/mp4">
-            Trình duyệt của bạn không hỗ trợ video.
-        </video>
-    </div>
+  <!-- 3. MỤC TIÊU -->
+  <div class="card">
+    <h2>🎯 Mục tiêu – Định hướng</h2>
+    <ul>
+      <li>
+        Đỗ nguyện vọng 1 ở Đại học Kinh tế Quốc dân trong tương lai sắp tới
+        với điểm thi THPTQG tốt.
+      </li>
+      <li>
+        Xây dựng một cuộc sống kỷ luật, cân bằng, xã giao tốt
+        và nhiều mối quan hệ chất lượng.
+      </li>
+    </ul>
+  </div>
 
-    <!-- MỤC TIÊU -->
-    <div class="card">
-        <h2>🎯 Mục tiêu – Định hướng</h2>
-        <ul>
-            <li>Đỗ nguyện vọng 1 Đại học Kinh tế Quốc dân với điểm thi THPTQG tốt.</li>
-            <li>Xây dựng cuộc sống kỷ luật, cân bằng, giao tiếp tốt và có nhiều mối quan hệ chất lượng.</li>
-        </ul>
-    </div>
-
-    <footer>
-        © 2025 – Website cá nhân của Nguyễn Mỹ Anh
-    </footer>
+  <footer>
+    © 2025 – Website cá nhân của Nguyễn Mỹ Anh
+  </footer>
 
 </div>
-
 </body>
 </html>
-
