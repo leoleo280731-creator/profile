@@ -1,14 +1,17 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <title>Giới thiệu bản thân - Nguyễn Mỹ Anh</title>
 
-    <!-- Font đẹp -->
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             margin: 0;
             font-family: 'Quicksand', sans-serif;
@@ -29,28 +32,41 @@
 
         h1 {
             font-size: 36px;
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
-        h2 {
-            margin-top: 50px;
-            color: #ff6fa5;
+        .subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #666;
         }
 
         .card {
             background: white;
             border-radius: 20px;
             padding: 25px;
-            margin-top: 25px;
+            margin-top: 35px;
             box-shadow: 0 10px 25px rgba(0,0,0,0.08);
         }
 
-        .center {
-            text-align: center;
+        h2 {
+            color: #ff6fa5;
+            margin-bottom: 15px;
+        }
+
+        p, li {
+            font-size: 17px;
+            line-height: 1.7;
+        }
+
+        ul {
+            padding-left: 20px;
         }
 
         img {
-            max-width: 100%;
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
             border-radius: 18px;
             margin-top: 15px;
         }
@@ -59,11 +75,6 @@
             width: 100%;
             border-radius: 18px;
             margin-top: 15px;
-        }
-
-        p {
-            font-size: 17px;
-            line-height: 1.7;
         }
 
         footer {
@@ -76,38 +87,65 @@
 </head>
 
 <body>
-    <div class="container">
 
-        <h1>Nguyễn Mỹ Anh</h1>
-        <p class="center">Lớp 12A4 – Trường THPT Hòn Gai</p>
+<div class="container">
 
-        <!-- HÌNH ẢNH TRÂN TRỌNG -->
-        <div class="card">
-            <h2>📸 Hình ảnh tôi trân trọng</h2>
-            <p>
-                Đây là hình ảnh mang ý nghĩa đặc biệt đối với tôi, gắn liền với những kỷ niệm,
-                sự nỗ lực và những giai đoạn đáng nhớ trong cuộc sống.
-            </p>
-            <img src="images/my-photo.jpg" alt="Hình ảnh trân trọng">
-        </div>
+    <!-- TIÊU ĐỀ -->
+    <h1>Nguyễn Mỹ Anh</h1>
+    <p class="subtitle">Lớp 12A4 – Trường THPT Hòn Gai</p>
 
-        <!-- VIDEO TRÂN TRỌNG -->
-        <div class="card">
-            <h2>🎬 Video tôi trân trọng</h2>
-            <p>
-                Video này lưu giữ những khoảnh khắc quan trọng và cảm xúc chân thành
-                mà tôi luôn muốn trân trọng và ghi nhớ.
-            </p>
-            <video controls>
-                <source src="videos/my-video.mp4" type="video/mp4">
-                Trình duyệt của bạn không hỗ trợ video.
-            </video>
-        </div>
-
-        <footer>
-            © 2025 – Website cá nhân của Nguyễn Mỹ Anh
-        </footer>
-
+    <!-- THÔNG TIN CƠ BẢN -->
+    <div class="card">
+        <h2>🌸 Thông tin cơ bản</h2>
+        <p>
+            <strong>Họ tên:</strong> Nguyễn Mỹ Anh<br>
+            <strong>Ngày sinh:</strong> 31/05/2008<br>
+            <strong>Lớp:</strong> 12A4 – THPT Hòn Gai
+        </p>
     </div>
+
+    <!-- HÌNH ẢNH TRÂN TRỌNG -->
+    <div class="card">
+        <h2>📸 Hình ảnh tôi trân trọng</h2>
+        <p>
+            Đây là hình ảnh mang ý nghĩa đặc biệt đối với tôi, gắn liền với
+            những kỷ niệm và những giai đoạn đáng nhớ trong cuộc sống.
+        </p>
+
+        <!-- CODE HÌNH ẢNH -->
+        <img src="images/my-photo.jpg" alt="Hình ảnh trân trọng">
+    </div>
+
+    <!-- VIDEO TRÂN TRỌNG -->
+    <div class="card">
+        <h2>🎬 Video tôi trân trọng</h2>
+        <p>
+            Video này lưu giữ những khoảnh khắc quan trọng và cảm xúc
+            mà tôi luôn trân trọng và ghi nhớ.
+        </p>
+
+        <!-- CODE VIDEO -->
+        <video controls>
+            <source src="videos/my-video.mp4" type="video/mp4">
+            Trình duyệt của bạn không hỗ trợ video.
+        </video>
+    </div>
+
+    <!-- MỤC TIÊU -->
+    <div class="card">
+        <h2>🎯 Mục tiêu – Định hướng</h2>
+        <ul>
+            <li>Đỗ nguyện vọng 1 Đại học Kinh tế Quốc dân với điểm thi THPTQG tốt.</li>
+            <li>Xây dựng cuộc sống kỷ luật, cân bằng, giao tiếp tốt và có nhiều mối quan hệ chất lượng.</li>
+        </ul>
+    </div>
+
+    <footer>
+        © 2025 – Website cá nhân của Nguyễn Mỹ Anh
+    </footer>
+
+</div>
+
 </body>
 </html>
+
